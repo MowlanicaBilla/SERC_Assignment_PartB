@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="./style.css">
+        <!-- <link rel="stylesheet" href="./calendar.css"> -->
+		<title>Project 3</title>
+	</head>
+	<body>
+		<div class="hero">
+			<div class="navbar">
+				<div class="nav-logo animate__animated animate__fadeInLeft">
+					<h1>SERC</h1>
+				</div>
+				<div class="nav-links" id="navlinks">
+					<i class='bx bx-x' onclick="closeMenu()"></i>
+					<ul class="animate__animated animate__fadeInDown">
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<button class="dropbtn">PEOPLE</button>
+								<div class="dropdown-content">
+								  <a href=#faculty>FACULTY</a>
+								  <a href="#">PhD STUDENTS</a>
+								  <a href="#">MS STUDENTS</a>
+								  <a href="#">BTech STUDENTS</a>
+								  <a href="#">PROJECT INTERNS</a>
+								</div>
+							  </div>
+						</li>
+						<li>
+							<a href="">PUBLICATIONS</a>
+						</li>
+						<li>
+							<a href="#focus_area">FOCUS AREAS</a>
+						</li>
+						<li>
+							<a href="events.html">EVENTS</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<button class="dropbtn">RESOURCES</button>
+								<div class="dropdown-content">
+								  <a href="#">PROJECTS</a>
+								  <a href="#">TEACHING</a>
+								  <a href="#">DOWNLOAD USEFUL LINKS</a>
+								  <a href="#">DEMOS</a>
+								  <a href="#">DATASETS</a>
+								  <a href="#">POSTERS</a>
+								</div>
+							  </div>
+						</li>
+						<li>
+							<a href="">CONTACT</a>
+						</li>
+					</ul>
+					<div class="button">
+						<button type="button" class="btn animate__animated animate__fadeInRight">Sign in</button>
+					</div>
+				</div>
+				<em class='bx bx-menu' onclick="showMenu()"></em>
+			</div>
+
+            <section id="calendar">
+                <div class="calendar">
+
+                    <div class="col leftCol">
+                      <div class="content">
+                        <h1 class="date">Wednesday<span>Oct 13th</span></h1>
+                        <div class="notes">
+                          <p>
+                            <input type="text" value="" placeholder="new note"/>
+                            <a href="#" title="Add note" class="addNote animate">+</a>
+                          </p>
+                          <ul class="noteList">
+                            <li>Submit Assignment 2 PartB<a href="#" title="Remove note" class="removeNote animate">x</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col rightCol">
+                      <div class="content">
+                        <h2 class="year">2021</h2>
+                        <ul class="months">
+                          <li><a href="#" title="Jan" data-value="1">Jan</a></li>
+                          <li><a href="#" title="Feb" data-value="2">Feb</a></li>
+                          <li><a href="#" title="Mar" data-value="3">Mar</a></li>
+                          <li><a href="#" title="Apr" data-value="4">Apr</a></li>
+                          <li><a href="#" title="May" data-value="5">May</a></li>
+                          <li><a href="#" title="Jun" data-value="6">Jun</a></li>
+                          <li><a href="#" title="Jul" data-value="7">Jul</a></li>
+                          <li><a href="#" title="Aug" data-value="8">Aug</a></li>
+                          <li><a href="#" title="Sep" data-value="9">Sep</a></li>
+                          <li><a href="#" title="Oct" data-value="10" class="selected">Oct</a></li>
+                          <li><a href="#" title="Nov" data-value="11">Nov</a></li>
+                          <li><a href="#" title="Dec" data-value="12">Dec</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <ul class="weekday">
+                          <li><a href="#" title="Mon" data-value="1">Mon</a></li>
+                          <li><a href="#" title="Tue" data-value="2">Tue</a></li>
+                          <li><a href="#" title="Wed" data-value="3">Wed</a></li>
+                          <li><a href="#" title="Thu" data-value="4">Thu</a></li>
+                          <li><a href="#" title="Fri" data-value="5">Fri</a></li>
+                          <li><a href="#" title="Say" data-value="6">Sat</a></li>
+                          <li><a href="#" title="Sun" data-value="7">Sun</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <ul class="days">
+                          <script>
+                            for( var _i = 1; _i <= 31; _i += 1 ){
+                              var _addClass = '';
+                              if( _i === 13 ){ _addClass = ' class="selected"'; }
+                              
+                              switch( _i ){
+                                case 8:
+                                case 10:
+                                case 27:
+                                  _addClass = ' class="event"';
+                                break;
+                              }
+              
+                              document.write( '<li><a href="#" title="'+_i+'" data-value="'+_i+'"'+_addClass+'>'+_i+'</a></li>' );
+                            }
+                          </script>
+                        </ul>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+              
+                    <div class="clearfix"></div>
+              
+                  </div>
+            </section>
+        </div>
+	</body>
+</html>
