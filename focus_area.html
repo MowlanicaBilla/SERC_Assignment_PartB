@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="./scripts/style.css">
+		<title>SERC</title>
+	</head>
+	<body>
+		<div class="hero">
+			<div class="navbar">
+				<div class="nav-logo animate__animated animate__fadeInLeft">
+					<h1>SERC</h1>
+				</div>
+				<div class="nav-links" id="navlinks">
+					<i class='bx bx-x' onclick="closeMenu()"></i>
+					<ul class="animate__animated animate__fadeInDown">
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<button class="dropbtn">PEOPLE</button>
+								<div class="dropdown-content">
+								  <a href=#faculty>FACULTY</a>
+								  <a href="#">PhD STUDENTS</a>
+								  <a href="#">MS STUDENTS</a>
+								  <a href="#">BTech STUDENTS</a>
+								  <a href="#">PROJECT INTERNS</a>
+								</div>
+							  </div>
+						</li>
+						<li>
+							<a href="publications.html">PUBLICATIONS</a>
+						</li>
+						<li>
+							<a href="focus_area.html">FOCUS AREAS</a>
+						</li>
+						<li>
+							<a href="events.html">EVENTS</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="resource.html"><button class="dropbtn">RESOURCES</button></a>
+								<div class="dropdown-content">
+								  <a href="#">PROJECTS</a>
+								  <a href="#">TEACHING</a>
+								  <a href="#">DOWNLOAD USEFUL LINKS</a>
+								  <a href="#">DEMOS</a>
+								  <a href="#">DATASETS</a>
+								  <a href="#">POSTERS</a>
+								</div>
+							  </div>
+						</li>
+						<li>
+							<a href="">CONTACT</a>
+						</li>
+					</ul>
+					<div class="button">
+						<button type="button" class="btn animate__animated animate__fadeInRight">Sign in</button>
+					</div>
+				</div>
+				<em class='bx bx-menu' onclick="showMenu()"></em>
+			</div>
+      <section id="focus_area">
+        <div class="focus_area zoom">
+          <img src="assets/focus_areas.PNG">
+          </div>
+      </section>
+		</div>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
